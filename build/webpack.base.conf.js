@@ -34,7 +34,12 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue', '.json'],
     alias: {
-      '@': resolve('src'),
+      //'@': resolve('src'),
+      'src': resolve('src'),
+      'common': resolve('src/common'),//设置之后加载common文件夹里面的文件时会报错
+      'components': resolve('src/components'),
+      'api': resolve('src/api'),
+      'base': resolve('src/base')
     }
   },
   module: {
