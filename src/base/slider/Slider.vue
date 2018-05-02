@@ -81,12 +81,12 @@ export default {
 
       this.slider.on('scrollEnd', () => {
         let pageIndex = this.slider.getCurrentPage().pageX
-        if (this.loop) {
-          // pageIndex -= 1
-          this.currentPageIndex = pageIndex === this.children.length ? 0 : pageIndex
-        }
+        // if (this.loop) {
+        //   // pageIndex -= 1
+        //   this.currentPageIndex = parseInt(pageIndex) === this.children.length - 1 ? 0 : pageIndex
+        //   console.log(pageIndex, this.children.length,this.currentPageIndex) //eslint-disable-line
+        // }
         this.currentPageIndex = pageIndex
-        console.log(this.currentPageIndex)
         if (this.autoPlay) {
           clearTimeout(this.timer)
           this._play()
@@ -100,6 +100,11 @@ export default {
       // }
       this.timer = setTimeout(() => {
         this.slider.goToPage(pageIndex, 0, 400)
+        if (pageIndex === this.children.length) {
+          this.currentPageIndex = -1
+          clearTimeout(this.timer)
+          this._play()
+        }
       }, this.interval)
     }
   }

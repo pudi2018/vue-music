@@ -1,5 +1,4 @@
 # vue-music
-<<<<<<< HEAD
 
 > pudi2018@gmail.com
 
@@ -20,6 +19,4 @@ npm run build --report
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-=======
 音乐炸鸡
->>>>>>> af20a09fa216eebc53ae371a9888e9874fa6800e
