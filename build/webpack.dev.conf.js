@@ -30,16 +30,16 @@ const devWebpackConfig = merge(baseWebpackConfig, {
   devServer: {
     before (app) {
       app.get('/api/getDiscList', function (req, res) {
-        const url = 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg'
+        const url = 'http://ustbhuangyi.com/music/api/getDiscList' // 'https://c.y.qq.com/splcloud/fcgi-bin/fcg_get_diss_by_tag.fcg'
         axios.get(url, {
           headers: {
-            referr: 'https://c.y.qq.com/',
-            host: 'c.y.qq.com'
+            referr: 'http://ustbhuangyi.com/',
+            host: 'ustbhuangyi.com'
           },
           params: req.query
         }).then((response) => {
-          // res.json(response.data)//qq接口返回code为-2所以重新做了个假数据
-          res.json(discList)
+          res.json(response.data)//qq接口返回code为-2所以重新做了个假数据
+          //res.json(discList)
         }).catch((err) => {
           console.log(err)
         })

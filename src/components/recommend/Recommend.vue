@@ -26,12 +26,16 @@
           </ul>
         </div>
       </div>
+      <div class="loading-container" v-show="!discList.length">
+        <loading/>
+      </div>
     </scroll>
   </div>
 </template>
 <script type="text/ecmascript-6">
 import Scroll from 'base/scroll/Scroll'
 import Slider from 'base/slider/Slider'
+import Loading from 'base/loading/Loading'
 import {getRecommend, getDiscList} from 'api/recommend'
 import {ERR_OK} from 'api/config'
 
@@ -69,7 +73,8 @@ export default {
   },
   components: {
     Slider,
-    Scroll
+    Scroll,
+    Loading
   }
 }
 </script>
