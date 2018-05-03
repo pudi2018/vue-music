@@ -1,0 +1,176 @@
+{
+    "DiscList": {
+        "data":{
+            "categoryId": 10000000,
+            "ein": 29,
+            "list": [
+                {
+                    "dissid": "3854678797",
+                    "createtime": "2018-05-02",
+                    "commit_time": "2018-05-02",
+                    "creator":{
+                        "type": 0,
+                        "qq": 775670247,
+                        "encrypt_uin": "7iSk7wSzowvl",
+                        "name": "杰少",
+                        "isVip": 0,
+                        "avatarUrl": "",
+                        "followflag":0
+                    },
+                    "dissname": "假期旅行：走沿海公路听的电子",
+                    "dissid": "3854678797",
+                    "dissname": "假期旅行：走沿海公路听的电子",
+                    "imgurl": "http://p.qpic.cn/music_cover/Q6jzKPNCPTc2iczypkicqzaMFz3sjmlVvN8jZib8ejg72mW1bkGgoCFpQ/600?n=1",
+                    "introduction": "",
+                    "listennum": 28500,
+                    "score": 0,
+                    "version": 0
+                },
+                {
+                    "commit_time": "2018-04-26",
+                    "createtime": "2018-04-26",
+                    "creator": {
+                        "type": 0,
+                        "qq": 3422172940,
+                        "encrypt_uin": "oivAow6lowEPon**",
+                        "name": "Jammy。쨈이",
+                        "isVip": 0,
+                        "avatarUrl": "",
+                        "followflag":0
+                    },
+                    "dissid": "3849394713",
+                    "dissname": "Roc Nation：JAY Z的造星工厂",
+                    "imgurl": "http://p.qpic.cn/music_cover/hnETBDZGVakiapcylpyxhC1wAZPxHcuBicw8zmEmuW5hacmaWpRrFlbQ/600?n=1",
+                    "introduction": "",
+                    "listennum": 14703,
+                    "score": 0,
+                    "version": 0
+                },
+                {
+                    "commit_time": "2018-04-19",
+                    "createtime": "2018-04-19",
+                    "creator": {
+                        "type": 0,
+                        "qq": 2514853234,
+                        "encrypt_uin": "ow457eckoi-i7n**",
+                        "name": "达令",
+                        "isVip": 0,
+                        "avatarUrl": "",
+                        "followflag":0
+                    },
+                    "dissid": "3838315460",
+                    "dissname": "“兰博基尼，帮我打开Texas Blues”",
+                    "imgurl": "http://p.qpic.cn/music_cover/Vtuicy0GCNEGeuTPTK8G2iamJXhvuMRzlCEvr5qhyvnMQgk5JXum7aew/600?n=1",
+                    "introduction": "",
+                    "listennum": 15235,
+                    "score": 0,
+                    "version": 0
+                },
+                {
+                    "commit_time": "2018-04-24",
+                    "createtime": "2018-04-24",
+                    "creator": {
+                        "type": 0,
+                        "qq": 2817694990,
+                        "encrypt_uin": "owc57iCq7eEqon**",
+                        "name": "Jane&Danny",
+                        "isVip": 0,
+                        "avatarUrl": "",
+                        "followflag":0
+                    },
+                    "dissid": "3846448579",
+                    "dissname": "《三体》：神游于奇幻浩瀚宇宙",
+                    "imgurl": "http://p.qpic.cn/music_cover/xJLWlNicFPzWw3p1m4U86nRH7VG5jeT2bbP69MqLzGgsbic9ZpMaCoSg/600?n=1",
+                    "introduction": "",
+                    "listennum": 506,
+                    "score": 0,
+                    "version": 0
+                },
+                {
+                    "commit_time": "2018-05-02",
+                    "createtime": "2018-05-02",
+                    "creator": {
+                        "type": 0,
+                        "qq": 945187827,
+                        "encrypt_uin": "NKvkoKclNe-l",
+                        "name": "念安娜",
+                        "isVip": 0,
+                        "avatarUrl": "",
+                        "followflag":0
+                    },
+                    "dissid": "3860141801",
+                    "dissname": "我最大的遗憾，是你的遗憾与我有关",
+                    "imgurl": "http://p.qpic.cn/music_cover/R8unPZMA4Vp5v2Ms96bst3CiatXUqQwnxc1Pfxzau0ss50uW2D7vCBw/600?n=1",
+                    "introduction": "",
+                    "listennum": 88447,
+                    "score": 0,
+                    "version": 0
+                },
+                {
+                    "commit_time": "2018-03-28",
+                    "createtime": "2018-03-28",
+                    "creator": {
+                        "type": 0,
+                        "qq": 819975016,
+                        "encrypt_uin": "Ne6qNKSkoe6s",
+                        "name": "我是爱音乐的Dawn.",
+                        "isVip": 0,
+                        "avatarUrl": "",
+                        "followflag":0
+                    },
+                    "dissid": "3798855505",
+                    "dissname": "40首中国城市地名电音",
+                    "imgurl": "http://p.qpic.cn/music_cover/20Dr6sBicc57lmu46SAQthpdGR1XVNda9QVfs1EFR8N6JGlTibDk2ELQ/600?n=1",
+                    "introduction": "",
+                    "listennum": 17909,
+                    "score": 0,
+                    "version": 0 
+                },
+                {
+                    "commit_time": "2018-04-28",
+                    "createtime": "2018-04-28",
+                    "creator": {
+                        "type": 2,
+                        "qq": 793407810,
+                        "encrypt_uin": "7iEi7enlNe6z",
+                        "name": "谈谈心恋恋爱 *",
+                        "isVip": 2,
+                        "avatarUrl": "",
+                        "followflag":0
+                    },
+                    "dissid": "3852347325",
+                    "dissname": "日本株式会社动画工房作品系列原声",
+                    "imgurl": "http://p.qpic.cn/music_cover/ibJJngZRP5m8ksRvDkGZxdUM9edxeOxOsgOBIwu7EbYUYCBibJlHgC2A/600?n=1",
+                    "introduction": "",
+                    "listennum": 18249,
+                    "score": 0,
+                    "version": 0
+                },
+                {
+                    "commit_time": "2018-05-02",
+                    "createtime": "2018-05-02",
+                    "creator": {
+                        "type": 0,
+                        "qq": 2574345656,
+                        "encrypt_uin": "ow4l7eoP7KCk7c**",
+                        "name": "谷雨问清明",
+                        "isVip": 0,
+                        "avatarUrl": "",
+                        "followflag":0
+                    },
+                    "dissid": "3848010962",
+                    "dissname": "回忆杀！快乐家族精选集",
+                    "imgurl": "http://p.qpic.cn/music_cover/pqaulIWic8iccn8LwRhOEyONqv0y16D2icbialib8O2rNKWzO7PVoE3CBbw/600?n=1",
+                    "introduction": "",
+                    "listennum": 987,
+                    "score": 0,
+                    "version": 0
+                }
+            ],
+            "sin": 0,
+            "sortId": 5,
+            "sum": 6230,
+            "uin": 0
+        }
+    }
+}
