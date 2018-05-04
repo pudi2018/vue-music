@@ -2,28 +2,46 @@
   <scroll class="listview" :data="data">
     <ul>
       <li v-for="group in data" class="list-group" :key="group.title">
-        <h2 class="title">{{group.title}}</h2>
+        <h2 class="list-group-title">{{group.title}}</h2>
         <ul>
           <li v-for="item in group.items" class="list-group-item" :key="item.id">
-            <img class="avatar" :src="item.avatar" alt="" />
+            <img class="avatar" v-lazy="item.avatar" alt="" />
             <span class="name">{{item.name}}</span>
           </li>
         </ul>
       </li>
     </ul>
+    <div class="list-shortcut" @touchstart="onShortcutTouchStart">
+      <ul>
+        <li v-for="(item, index) in shortcutList" :data-index="index" :key="item">{{item}}</li>
+      </ul>
+    </div>
   </scroll>
 </template>
 <script type="text/ecmascript-6">
 import Scroll from 'base/scroll/Scroll'
+import {getData} from 'common/js/dom'
 export default {
   props: {
     data: {
       type: Array,
-      default: []
+      default: () => []
+    }
+  },
+  computed: {
+    shortcutList() {
+      return this.data.map((group) => {
+        return group.title.substr(0, 1)
+      })
     }
   },
   components: {
     Scroll
+  },
+  methods: {
+    onShortcutTouchStart(e) {
+      let anchorIndex = getData(e, 'index')
+    }
   }
 }
 </script>
@@ -65,4 +83,30 @@ export default {
       width: 20px
       padding: 20px 0
       border-radius: 10px
+      text-align: center
+      background: $color-background-d
+      font-family: Helvetica
+      .item
+        padding: 3px
+        line-height: 1
+        color: $color-text-l
+        font-size: $font-size-small
+        &.current
+          color: $color-theme
+    .list-fixed
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      .fixed-title
+        height: 30px
+        padding-left: 20px
+        font-size: $font-size-small
+        color: $color-text-l
+        background: $color-highlight-background
+    .loading-container
+      position: absolute
+      width: 100%
+      top: 50%
+      transform: translateY(-50%)
 </style>

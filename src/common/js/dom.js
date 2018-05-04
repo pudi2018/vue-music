@@ -1,4 +1,4 @@
-export function addClasss(el, className) {
+export function addClasss (el, className) {
   if (hasClass(el, className)) {
     return
   }
@@ -7,7 +7,15 @@ export function addClasss(el, className) {
   el.className = newClass.join(' ')
 }
 
-export default function hasClass (el, className) {
+export function hasClass (el, className) {
   let reg = new RegExp('(^|\\s)' + className + '(\\s|$)')
   return reg.test(el, className)
+}
+export function getData (el, name, val) {
+  let newName = `data-${name}`
+  if (val) {
+    return el.setAttribute(newName, val)
+  } else {
+    return el.getAttribtue(newName)
+  }
 }
