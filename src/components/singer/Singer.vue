@@ -69,7 +69,7 @@ export default {
         return a.title.charCodeAt(0) - b.title.charCodeAt(0)
       })
 
-      return hot.concat(ret)
+      return [...hot, ...ret] // hot.concat(ret)
     }
   }
 }
