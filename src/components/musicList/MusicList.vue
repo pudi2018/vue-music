@@ -1,18 +1,27 @@
 <template>
   <div class="music-list">
     <div class="music-header">
-      <div class="back">
+      <div class="back" @click="back">
         <i class="icon-fanhui1"></i>
       </div>
       <h1 class="title" v-html="title"></h1>
     </div>
     <div class="bg-image" :style="bgStyle" ref="bgImage">
       <div class="filter" ref="filter"></div>
+      <div class="play-wrapper">
+        <div class="play" v-show="songs.length > 0" ref="playBtn">
+          <i class="icon-play"></i>
+          <span class="text">随机播放全部</span>
+        </div>
+      </div>
     </div>
     <div class="bg-layer" ref="layer"></div>
     <scroll @scroll="scroll" :probe-type="probeType" :listen-scroll="listenScroll" :data="songs" class="list" ref="list">
       <div class="song-list-wrapper">
         <song-list :songs="songs"></song-list>
+      </div>
+      <div class="loasing-container" v-show="!songs.lenght">
+        <loading></loading>
       </div>
     </scroll>
   </div>
@@ -20,6 +29,7 @@
 <script type="text/ecmascript-6">
 import Scroll from 'base/scroll/Scroll'
 import SongList from 'base/song-list/SongList'
+import Loading from 'base/loading/Loading'
 import {prefixStyle} from 'common/js/dom'
 const RESERVED_HEIGHT = 40
 const transform = prefixStyle('transform')
@@ -61,6 +71,9 @@ export default {
   methods: {
     scroll(pos) {
       this.scrollY = pos.y
+    },
+    back() {
+      this.$router.back()
     }
   },
   watch: {
@@ -79,12 +92,14 @@ export default {
       }
       this.$refs.filter.style[backdrop] = `blur(${blur}px)`
       if (newY < this.minTranslateY) {
-        zIndex = 100
+        zIndex = 10
         this.$refs.bgImage.style.paddingTop = 0
         this.$refs.bgImage.style.height = `${RESERVED_HEIGHT}px`
+        this.$refs.playBtn.style.display = 'none'
       } else {
         this.$refs.bgImage.style.paddingTop = '70%'
         this.$refs.bgImage.style.height = 0
+        this.$refs.playBtn.style.display = 'block'
       }
       this.$refs.bgImage.style[transform] = `scale(${scale})`
       this.$refs.bgImage.style.zIndex = zIndex
@@ -92,7 +107,8 @@ export default {
   },
   components: {
     Scroll,
-    SongList
+    SongList,
+    Loading
   }
 }
 </script>
@@ -144,7 +160,7 @@ export default {
         bottom: 20px
         z-index: 50
         width: 100%
-        .paly
+        .play
           box-sizing: border-box
           width: 105px
           padding: 7px 0
