@@ -17,8 +17,8 @@ const PORT = process.env.PORT && Number(process.env.PORT)
 const app = express()
 const apiRoutes = express.Router()
 app.use('/api', apiRoutes)
-const appData = require('../data.json')
-const discList = appData.DiscList
+// const appData = require('../data.json')
+// const discList = appData.DiscList
 const devWebpackConfig = merge(baseWebpackConfig, {
   module: {
     rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
@@ -38,8 +38,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
           },
           params: req.query
         }).then((response) => {
-          res.json(response.data)//qq接口返回code为-2所以重新做了个假数据
-          //res.json(discList)
+          res.json(response.data) // qq接口返回code为-2所以重新做了个假数据
+          // res.json(discList)
         }).catch((err) => {
           console.log(err)
         })
